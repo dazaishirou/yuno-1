@@ -1,0 +1,522 @@
+body {
+    background: #000;
+    font-size: 1.15em;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: 'insta';
+    src: url('https://dl.dropbox.com/s/ucaaf147antrjs1/falling-webfont.woff2?dl=0') format('woff2'), url('https://dl.dropbox.com/s/q3hebg3ach5ly2o/falling-webfont.woff?dl=0') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.instalba * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.instalba a {
+    text-decoration: none !important;
+}
+
+.instalba {
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #222;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #231f20;
+    max-width: 700px;
+    margin: auto;
+}
+
+.instatop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.instatop a {
+    font-family: 'insta';
+    font-size: 45px;
+    color: #231f20;
+}
+
+.instasch {
+    width: 25%;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #8e8e8e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 26px;
+    text-align: center;
+}
+
+.instasch:before {
+    content: '\eaa6';
+    font-family: 'honeybee';
+    font-size: 8px;
+    margin-right: 5px;
+    letter-spacing: 0;
+    color: #a7a9ac;
+}
+
+.instalinks {
+    display: flex;
+    align-items: center;
+}
+
+.instalinks span {
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.instalinks img {
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
+.instalinks * {
+    cursor: pointer;
+}
+
+.instabd {
+    margin: 25px;
+}
+
+.instaprez {
+    display: flex;
+    align-items: flex-start;
+}
+
+.instabio {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.instapp {
+    border-radius: 100%;
+    background: linear-gradient( 110deg, #f99d4c 0%, #c42e92 50%);
+    background-size: 400% 400%;
+    animation: Gradient 15s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.instapp img {
+    border-radius: 100%;
+    border: 5px solid #fafafa;
+    background: #fafafa;
+    height: 160px;
+    width: 160px;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.instid {
+    display: flex;
+    align-items: center;
+}
+
+.instid b {
+    font-weight: 200;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.instabo {
+    display: flex;
+}
+
+.instabo span {
+    background: #0095f6;
+    font-size: 11px;
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+    padding: 0 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.instabo span:nth-child(2) {
+    margin-right: 20px;
+    padding: 0 13px;
+}
+
+.instid svg {
+    cursor: pointer;
+}
+
+.instats {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.instats span {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.instabout {
+    font-size: 16px;
+}
+
+.instabout span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.instabout b {
+    color: #00376b;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.instastories {
+    display: flex;
+    text-align: center;
+    margin: 30px 0;
+    justify-content: flex-start;
+}
+
+.alstory {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.alstory b {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.alstory div {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 -0px;
+}
+
+.alstory div:before {
+    height: 86px;
+    width: 86px;
+    content: "";
+    position: absolute;
+    border: 2px solid #dbdbdb;
+    border-radius: 100%;
+    transition: all ease-in-out .5s;
+}
+
+.alstory:hover div:before {
+    transform: rotate(45deg);
+    border-top: dotted;
+    border-color: #dbdbdb;
+    border-width: 2px;
+    transition: all ease-in-out .5s;
+}
+
+.instasepa {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1Px solid #dbdbdb;
+}
+
+.instasepa b {
+    padding: 30px 0;
+    margin-top: -1px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #939393;
+    margin-right: 50px;
+}
+
+.instasepa b:first-child {
+    border-top: 1px solid #262626;
+    color: #262626;
+}
+
+
+/**** PUBLICATIONS / MODAL ****/
+
+.instacont {
+    position: relative;
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instacont input {
+    display: none;
+}
+
+.instapub-item {
+    width: calc(33% - 20px);
+    height: 200px;
+    text-decoration: none;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 0 10px 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.instapub-item div {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    opacity: 0;
+    transition: all ease-in-out .1s;
+}
+
+.instapub-item:hover div {
+    opacity: 1;
+    transition: all ease-in-out .1s;
+}
+
+.instapub-item div b span {
+    margin: 10px;
+}
+
+.instapub-item div b:nth-child(2) {
+    margin-left: 15px;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, .9);
+    transition: opacity .25s ease;
+    z-index: 999;
+}
+
+.modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.modal-trigger:checked+.modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-trigger:checked+.modal .modal-pop {
+    top: 10%;
+}
+
+.modal-pop {
+    transition: top .25s ease;
+    position: relative;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.modal-pop {
+    max-width: 350px;
+    background: #fafafa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.modal-top {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 15px 0;
+}
+
+.modalpp {
+    border-radius: 100%;
+    background: linear-gradient( 110deg, #f99d4c 0%, #c42e92 50%);
+    background-size: 400% 400%;
+    animation: Gradient 15s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.modalpp img {
+    border-radius: 100%;
+    border: 2px solid #fafafa;
+    background: #fafafa;
+    height: 50px;
+    width: 50px;
+}
+
+.modal-top span {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.modal-top span b {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.modal-top svg {
+    position: absolute;
+    right: 20px;
+}
+
+.modalpub {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0;
+}
+
+.modal-options {
+    display: flex;
+    padding: 0 20px 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #231f20;
+}
+
+.modal-options span,
+.modal-left span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-left {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.modal-left span {
+    margin-right: 15px;
+}
+
+.modal-left div {
+    margin-bottom: 10px;
+}
+
+.modal-trigger:checked+.modal .modal-bg:after,
+.modal-trigger:checked+.modal .modal-bg:before {
+    opacity: 1;
+}
+
+.modal-bg:hover:after,
+.modal-bg:hover:before {
+    background: #aaa;
+}
+
+.modal-bg:before {
+    transform: rotate(-45deg);
+}
+
+
+/*----- 【 MUSIC PLAYER #08 by @glenthemes 】 -----*/
+
+[glenplayer08] {
+    /*-- player position --*/
+    --MusicPlayer-Position: "bottom left";
+    --MusicPlayer-Corner-Offset: 20px;
+    /*-- album image --*/
+    --MusicPlayer-Album-Image-Size: 54px;
+    --MusicPlayer-Album-Image-Corner-Roundness: 3px;
+    /*-- player buttons (play/pause) --*/
+    --MusicPlayer-Buttons-Size: 12px;
+    --MusicPlayer-Buttons-Color: #ddd;
+    --MusicPlayer-Buttons-Padding: 8px;
+    --MusicPlayer-Buttons-Border-Size: 1px;
+    --MusicPlayer-Buttons-Border-Color: #bbb;
+    --MusicPlayer-Buttons-Background: #000000;
+    --MusicPlayer-Buttons-Background-Transparency: 45%;
+    --MusicPlayer-Buttons-Background-Blur: 3px;
+    /*-- player song name --*/
+    --MusicPlayer-Song-Name-Size: 12px;
+    --MusicPlayer-Song-Name-Color: #222;
+    /*-- player artist name --*/
+    --MusicPlayer-Artist-Name-Size: 12px;
+    --MusicPlayer-Artist-Name-Color: #777;
+    /*-- player gap/spacing --*/
+    --MusicPlayer-Center-Gap: 14px;
+    --MusicPlayer-Text-Line-Spacing: 4px;
+    /*-- playback settings --*/
+    --MusicPlayer-Autoplay: "no";
+    --MusicPlayer-Replay: "no";
+}
+
+
+/* don't delete this line */
+
+
+/*---- END MUSIC PLAYER ----*/
